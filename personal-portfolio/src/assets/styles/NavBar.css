@@ -2,7 +2,6 @@
     width: 100%;
     height: 75px;
     overflow: hidden;
-    background: rgba(23, 23, 23, 0.9);
     position: fixed;
     text-align: center;
     top: 0;
@@ -14,10 +13,12 @@
     left: 0;
     top: 0;
     padding: 14px 0 0 23px;
-    color: #bfbfbf;
+    color: white;
     text-align: center;
     text-decoration: none;
     font-size: 20px;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
 }
 
 .links {
@@ -28,33 +29,49 @@
 .links a{
     float: left;
     display: block;
-    color: #bfbfbf;
+
+    color: #a7a9be;
     text-align: center;
     text-decoration: none;
-    font-size: 20px;
-}
+    font-size: 14px;
+    font-family: 'Roboto Mono', monospace;
 
-.links #button span{
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-}
-
-.navbar a:hover, .navbar a.active {
-    color: white;
-}
-
-.navbar a:hover {
-    text-decoration: underline;
-}
-
-.links a {
-    padding-left: 3vw;
-    padding-right: 3vw;
+    padding-left: 1.5vw;
+    padding-right: 1.5vw;
     padding-top: 23px;
     padding-bottom: 23px;
+}
+
+.links a:hover {
+    color: #ff8906
+}
+
+.links a .num {
+    color: #ff8906;
+}
+
+.links #button span {
+    background-color: #ff8906;
+    border-radius: 5px;
+    padding: 10px 0;
+}
+
+.links #button span span{
+    background-color: #0f0e17;
+    border: 1px solid #ff8906;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    transition: all 0.3s ease;
+}
+
+.links #button span:hover span{
+    position: relative;
+    top: -4px;
+    left: -4px;
 }
 
 .icon {
