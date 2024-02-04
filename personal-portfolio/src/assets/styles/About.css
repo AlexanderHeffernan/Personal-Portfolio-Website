@@ -1,0 +1,75 @@
+.About {
+    padding: 0 100px 0 100px;
+    background-color: #fffffe;
+    height: auto;
+    display: flex;
+}
+
+.About .TextContainer {
+    width: 50%;
+}
+
+.About h3 {
+    font-size: 26px;
+    color: #0f0e17;
+    font-family: 'Roboto', sans-serif;
+}
+
+.About h3 span {
+    color: #ff8906;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.About p {
+    color: #a7a9be;
+    font-size: 20px;
+}
+
+.About .ImageContainer {
+    width: 50%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.About .ImageContainer .Outline {
+    border: 4px solid #ff8906;
+    border-radius: 10px;
+    width: 250px;
+    height: 250px;
+    position: relative;
+}
+
+.About .ImageContainer .Outline img {
+    width: calc(100% + 8px);
+    height: auto;
+    opacity: 1;
+    transition: all 0.3s ease;
+    position: absolute;
+    top: -18px;
+    left: -18px;
+    border-radius: 10px;
+}
+
+.About .ImageContainer .Outline:hover .Overlay{
+    opacity: 0;
+}
+
+.About .ImageContainer .Outline:hover img{
+    top: -25px;
+    left: -25px;
+}
+
+
+@media screen and (max-width: 750px) {
+    .About {
+        padding: 0 40px 0 40px;
+        display: block;
+    }
+
+    .About .TextContainer, .About .ImageContainer {
+        width: 100%;
+    }
+}
