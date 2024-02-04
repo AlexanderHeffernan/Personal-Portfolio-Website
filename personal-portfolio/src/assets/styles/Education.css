@@ -1,0 +1,132 @@
+.Education {
+    height: auto;
+    background-color: #fffffe;
+}
+
+.Education h3 {
+    font-size: 26px;
+    padding: 30px 100px 0 100px;
+    color: #0f0e17;
+    font-family: 'Roboto', sans-serif;
+}
+
+.Education h3 span {
+    color: #ff8906;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.Education .TimeLineContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    position: relative;
+}
+
+.Education .TimeLine {
+    width: 700px;
+    height: 2px;
+    background-color: #0f0e17;
+    position: relative;
+    display: flex;
+}
+
+.Education .TimeLine .Dash {
+    position: absolute;
+    top: -15px;
+    width: 2px;
+    height: 30px;
+    background-color: #0f0e17;
+}
+
+.Education .BoxHolder .PointsContainer {
+    display: flex;
+    height: 20px;
+    position: relative;
+    top: -30px;
+}
+
+.Education .BoxHolder .PointsContainer .Point {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #0f0e17;
+    border-radius: 100%;
+}
+
+.Education .BoxHolder .PointsContainer .Point p {
+    position: relative;
+    top: -36px;
+}
+
+.Education .BoxHolder .PointsContainer .Point .Line {
+    width: 2px;
+    height: 30px;
+    background-color: #0f0e17;
+    position: relative;
+    top: -21px;
+    left: 14px;
+}
+
+.Education .BoxHolder {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.Education .BoxHolder .Box {
+    background-color: #0f0e17;
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.Education .BoxHolder .Box h4 {
+    font-size: 22px;
+    color: white;
+    margin-top: 0;
+}
+
+.Education .BoxHolder .Box h5 {
+    font-size: 20px;
+    color: white;
+}
+
+.Education .BoxHolder .Box p {
+    font-size: 13px;
+    color: #a7a9be;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.Education .BoxHolder .Box ul li {
+    font-size: 18px;
+    color: #a7a9be;
+}
+
+.Education .BoxHolder .Box ul li ul li {
+    font-size: 16px;
+}
+
+@media screen and (max-width: 750px) {
+    .Education .TimeLineContainer {
+        display: none;
+    }
+    
+    .Education .BoxHolder {
+        display: block;
+        text-align: center;
+    }
+
+    .Education .BoxHolder .PointsContainer {
+        display: none;
+    }
+
+    .Education .BoxHolder .Box {
+        display: inline-block;
+        text-align: left;
+    }
+}
