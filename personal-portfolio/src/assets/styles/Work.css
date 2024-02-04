@@ -1,0 +1,104 @@
+.Work {
+    padding: 0 100px 0 100px;
+    height: auto;
+}
+
+.Work h3 {
+    font-size: 26px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.Work h3 span {
+    color: #ff8906;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.Work p {
+    color: #a7a9be;
+    font-size: 20px;
+}
+
+.Work .AccordionHolder {
+    width: 100%;
+    display: flex;
+}
+
+.Work .AccordionHolder .AccordionSelector {
+    width: 240px;
+    height: 200px;
+    border-left: 2px solid #a7a9be;
+}
+
+.Work .AccordionHolder .AccordionSelector button{
+    width: 100%;
+    height: 42px;
+    padding: 0px 15px 2px;
+    border: none;
+    outline: none;
+    background: none;
+    color: #a7a9be;
+    text-align: left;
+    font-size: 13px;
+    font-family: 'Roboto Mono', monospace;
+    position: relative;
+    left: -2px;
+    transition: all 0.3s ease;
+}
+
+.Work .AccordionHolder .AccordionSelector button.active{
+    color: white;
+    border-left: 2px solid white;
+}
+
+.Work .AccordionHolder .AccordionContent {
+    width: calc(100% - 240px);
+}
+
+.Work .AccordionHolder .AccordionContent h4 {
+    font-size: 22px;
+    color: white;
+}
+
+.Work .AccordionHolder .AccordionContent h5 {
+    font-size: 20px;
+    color: white;
+}
+
+.Work .AccordionHolder .AccordionContent p {
+    font-size: 13px;
+    color: #a7a9be;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.Work .AccordionHolder .AccordionContent ul li {
+    font-size: 18px;
+    color: #a7a9be;
+}
+
+@media screen and (max-width: 750px) {
+    .Work .AccordionHolder {
+        display: block;
+    }
+
+    .Work .AccordionHolder .AccordionSelector {
+        width: 100%;
+        height: auto;
+        border-left: none;
+        border-bottom: 2px solid #a7a9be;
+        display: flex;
+    }
+    .Work .AccordionHolder .AccordionSelector button {
+        left: 0;
+        bottom: -1px;
+    }
+    
+    .Work .AccordionHolder .AccordionSelector button.active {
+        border-left: none;
+        border-bottom: 2px solid white;
+    }
+
+    .Work .AccordionHolder .AccordionContent {
+        width: 100%;
+    }
+}
