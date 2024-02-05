@@ -16,7 +16,7 @@ function Work() {
             <h3><span>02.</span> Work</h3>
             <div className="AccordionHolder">
                 <div className="AccordionSelector">
-                    <button className={`${accordionSelection === 0 ? 'active' : ''}`} onClick={(e) => handleAccordionSelectorClick(0)}>External Reporting Board</button>
+                    <button className={`${accordionSelection === 0 ? 'active' : ''}`} onClick={(e) => handleAccordionSelectorClick(0)}>XRB</button>
                     <button className={`${accordionSelection === 1 ? 'active' : ''}`}onClick={(e) => handleAccordionSelectorClick(1)}>McDonald's</button>
                 </div>
                 {content[accordionSelection]}
