@@ -1,0 +1,70 @@
+.Portfolio {
+    padding: 0 100px 0 100px;
+    height: 100px;
+}
+
+.Portfolio h3 {
+    font-size: 26px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.Portfolio h3 span {
+    color: #ff8906;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.Portfolio .ItemsGrid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns as needed */
+    gap: 20px; /* Adjust the gap between items as needed */
+    justify-content: center; /* Center the grid horizontally */
+    align-content: center; /* Center the grid vertically */
+}
+
+.Portfolio .ItemsGrid .PortfolioItem {
+    background-color: white;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.Portfolio .ItemsGrid .PortfolioItem:hover {
+    transform: scale(1.1);
+    z-index: 1;
+    box-shadow: 0px 0px 10px 10px #ff8b0680;
+}
+
+.Portfolio .ItemsGrid .PortfolioItem h4 {
+    font-size: 22px;
+    color: #0f0e17;
+    margin-top: 0;
+}
+
+.Portfolio .ItemsGrid .PortfolioItem .Tag {
+    display: inline-block;
+    background-color: #ff8906;
+    min-width: fit-content;
+    margin-right: 0.6rem;
+    margin-bottom: 0.6rem;
+    padding: 5px 10px;
+    border-radius: 3px;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.Portfolio .ItemsGrid .PortfolioItem a {
+    color: #e53170;
+    text-decoration: none;
+    transition: font-weight ease 0.3s;
+}
+
+.Portfolio .ItemsGrid .PortfolioItem a:hover {
+    color: #e53170;
+    font-weight: 800;
+}
