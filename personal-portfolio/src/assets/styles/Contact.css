@@ -1,0 +1,47 @@
+.Contact {
+    height: auto;
+    background-color: #fffffe;
+}
+
+.Contact h3 {
+    font-size: 26px;
+    padding: 30px 100px 0 100px;
+    color: #0f0e17;
+    font-family: 'Roboto', sans-serif;
+}
+
+.Contact h3 span {
+    color: #ff8906;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.Contact .ContactContent {
+    text-align: center;
+    width: 90%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding-bottom: 150px;
+}
+
+.Contact .ContactContent h4 {
+    font-size: 40px;
+}
+
+.Contact .ContactContent p {
+    font-size: 20px;
+    color: #2E2F3E;
+    margin-bottom: 25px;
+}
+
+.Contact .ContactContent a {
+    background-color: #ff8906;
+    color: white;
+    min-width: fit-content;
+    margin-right: 0.6rem;
+    padding: 15px 20px;
+    border-radius: 3px;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+}
