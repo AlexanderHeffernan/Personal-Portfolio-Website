@@ -6,7 +6,7 @@
 
 .Contact h3 {
     font-size: 26px;
-    padding: 30px 200px 0 200px;
+    padding: 30px 15% 0 15%;
     color: #0f0e17;
     font-family: 'Roboto', sans-serif;
 }
@@ -64,7 +64,7 @@
 }
 
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 850px) {
     .Contact h3 {
         padding: 30px 40px 0 40px;
     }

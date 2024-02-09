@@ -31,6 +31,7 @@
     border-radius: 5px;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     position: relative;
+    min-height: 200px;
 }
 
 .Portfolio .ItemsGrid .PortfolioItem:hover {
@@ -48,6 +49,7 @@
     color: #0f0e17;
     margin-top: 0;
     margin-bottom: 0;
+    width: calc(100% - 30px);
 }
 
 .Portfolio .ItemsGrid .PortfolioItem .TopRow i {
@@ -63,14 +65,11 @@
     font-size: 30px;
 }
 
-.Portfolio .ItemsGrid .PortfolioItem p {
-    margin-bottom: 40px;
-}
-
 .Portfolio .ItemsGrid .PortfolioItem .BottomRow {
     position: absolute;
     bottom: 0;
     margin-bottom: 10px;
+    background-color: white;
 }
 
 .Portfolio .ItemsGrid .PortfolioItem .BottomRow .Tag {
@@ -78,16 +77,16 @@
     background-color: #ff8906;
     min-width: fit-content;
     margin-right: 0.6rem;
-    margin-bottom: 0.6rem;
+    margin-bottom: 0.4rem;
     padding: 5px 10px;
     border-radius: 3px;
     color: white;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 700;
     font-family: 'Roboto Mono', monospace;
 }
 
-.Portfolio .ItemsGrid .PortfolioItem .BottomRow a {
+.Portfolio .ItemsGrid .PortfolioItem a {
     color: #e53170;
     text-decoration: none;
     transition: font-weight ease 0.3s;
@@ -98,17 +97,38 @@
     font-weight: 800;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 1200px) {
+    .Portfolio .ItemsGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 1000px) {
     .Portfolio {
         padding: 100px 40px 100px 40px;
     }
 
-    .Portfolio .ItemsGrid {
-        grid-template-columns: repeat(1, 1fr);
+    .Portfolio h3 {
+        padding-left: 13%;
     }
+    
+    .Portfolio .ItemsGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 
+@media screen and (max-width: 850px) {
+    .Portfolio h3 {
+        padding-left: 0;
+    }
     .Portfolio .ItemsGrid .PortfolioItem:hover {
         transform: scale(1);
         z-index: 0;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .Portfolio .ItemsGrid {
+        grid-template-columns: repeat(1, 1fr);
     }
 }

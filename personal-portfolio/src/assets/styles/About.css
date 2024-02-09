@@ -1,5 +1,5 @@
 .About {
-    padding: 100px 200px 100px 200px;
+    padding: 100px 15% 100px 15%;
     background-color: #fffffe;
     height: auto;
     display: flex;
@@ -7,6 +7,7 @@
 
 .About .TextContainer {
     width: 50%;
+    margin-right: 40px;
 }
 
 .About h3 {
@@ -63,7 +64,7 @@
 }
 
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 850px) {
     .About {
         padding: 50px 40px 50px 40px;
         display: block;

@@ -6,7 +6,7 @@
 
 .Education h3 {
     font-size: 26px;
-    padding: 30px 200px 20px 200px;
+    padding: 30px 15% 20px 15%;
     color: #0f0e17;
     font-family: 'Roboto', sans-serif;
 }
@@ -112,7 +112,7 @@
     font-size: 16px;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 850px) {
     .Education .TimeLineContainer {
         display: none;
     }

@@ -90,10 +90,10 @@
     padding: 23px 23px 0 0;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 850px) {
     .icon {
         display: block;
-        padding: 23px 46px 0 0;
+        padding: 0 46px 0 0;
         font-size: 30px;
         color:#ff8906;
     }

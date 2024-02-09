@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import '../assets/styles/About.css';
 import portraitOrange from '../assets/images/Avatar-2-orange.png';
 import portrait from '../assets/images/Avatar-2.png';
@@ -15,8 +15,8 @@ function About() {
             </div>
             <div className="ImageContainer">
                 <div className="Outline">
-                    <img src={portrait} />
-                    <img className="Overlay"src={portraitOrange} />
+                    <img src={portrait} alt="Portrait for Alexander Heffernan" />
+                    <img className="Overlay"src={portraitOrange} alt="" />
                 </div>
             </div>
         </div>

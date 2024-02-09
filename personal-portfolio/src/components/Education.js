@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import '../assets/styles/Education.css';
 
 function Education() {
