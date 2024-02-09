@@ -108,9 +108,8 @@
         margin: 10px; /* Add some margin between links */
     }
 
-    .links #icon {
-        width: 100%;
-        padding: 23px 0 23px 0;
+    .icon {
+        padding: 23px 46px 0 0;
     }
 
     .navbar.navbar.open {

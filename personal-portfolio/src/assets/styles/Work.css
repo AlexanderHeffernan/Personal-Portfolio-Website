@@ -81,7 +81,7 @@
 
 @media screen and (max-width: 750px) {
     .Work {
-        padding: 0 10% 0 10%;
+        padding: 50px 40px 110px 40px;
     }
 
     .Work .AccordionHolder {
@@ -107,5 +107,25 @@
 
     .Work .AccordionHolder .AccordionContent {
         width: 100%;
+    }
+
+    .Work .AccordionHolder .AccordionContent h4 {
+        font-size: 20px;
+    }
+    
+    .Work .AccordionHolder .AccordionContent h5 {
+        font-size: 18px;
+    }
+    
+    .Work .AccordionHolder .AccordionContent p {
+        font-size: 11px;
+    }
+
+    .Work .AccordionHolder .AccordionContent ul {
+        padding-left: 15px;
+    }
+    
+    .Work .AccordionHolder .AccordionContent ul li {
+        font-size: 14px;
     }
 }

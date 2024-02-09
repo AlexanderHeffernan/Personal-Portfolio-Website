@@ -97,3 +97,13 @@
     color: #e53170;
     font-weight: 800;
 }
+
+@media screen and (max-width: 750px) {
+    .Portfolio {
+        padding: 100px 40px 100px 40px;
+    }
+
+    .Portfolio .ItemsGrid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

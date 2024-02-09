@@ -62,3 +62,10 @@
     top: -4px;
     left: -4px;
 }
+
+
+@media screen and (max-width: 750px) {
+    .Contact h3 {
+        padding: 30px 40px 0 40px;
+    }
+}

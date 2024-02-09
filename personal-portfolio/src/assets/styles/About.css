@@ -65,11 +65,16 @@
 
 @media screen and (max-width: 750px) {
     .About {
-        padding: 0 40px 0 40px;
+        padding: 50px 40px 50px 40px;
         display: block;
+    }
+
+    .About p {
+        font-size: 18px;
     }
 
     .About .TextContainer, .About .ImageContainer {
         width: 100%;
+        margin-bottom: 40px;
     }
 }

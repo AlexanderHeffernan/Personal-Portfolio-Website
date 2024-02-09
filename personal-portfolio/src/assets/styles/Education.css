@@ -130,4 +130,12 @@
         display: inline-block;
         text-align: left;
     }
+
+    .Education h3 {
+        padding: 30px 40px 0px 40px;
+    }
+
+    .Education .BoxHolder .Box ul {
+        padding-left: 15px;
+    }
 }
