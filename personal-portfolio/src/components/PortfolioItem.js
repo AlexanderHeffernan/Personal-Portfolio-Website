@@ -9,11 +9,13 @@ function PortfolioItem({ title, description, tags, link, SlideShow }) {
                 )}
             </div>
             <p>{description}</p>
-            {tags.map((tag, index) => (
-                <div className="Tag" key={index}>{tag}</div>
-            ))}
-            <br />
-            <a href={"https://" + link} target="_blank">Read more</a>
+            <div className="BottomRow">
+                {tags.map((tag, index) => (
+                    <div className="Tag" key={index}>{tag}</div>
+                ))}
+                <br />
+                <a href={"https://" + link} target="_blank">Read more</a>
+            </div>
         </div>
     )
 }

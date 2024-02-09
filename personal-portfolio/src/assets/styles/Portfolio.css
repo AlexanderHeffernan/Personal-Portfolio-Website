@@ -27,9 +27,10 @@
     display: block;
     align-items: center;
     justify-content: center;
-    padding: 10px;
+    padding: 10px 20px 60px 20px;
     border-radius: 5px;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    position: relative;
 }
 
 .Portfolio .ItemsGrid .PortfolioItem:hover {
@@ -46,6 +47,7 @@
     font-size: 22px;
     color: #0f0e17;
     margin-top: 0;
+    margin-bottom: 0;
 }
 
 .Portfolio .ItemsGrid .PortfolioItem .TopRow i {
@@ -61,7 +63,17 @@
     font-size: 30px;
 }
 
-.Portfolio .ItemsGrid .PortfolioItem .Tag {
+.Portfolio .ItemsGrid .PortfolioItem p {
+    margin-bottom: 40px;
+}
+
+.Portfolio .ItemsGrid .PortfolioItem .BottomRow {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 10px;
+}
+
+.Portfolio .ItemsGrid .PortfolioItem .BottomRow .Tag {
     display: inline-block;
     background-color: #ff8906;
     min-width: fit-content;
@@ -72,9 +84,10 @@
     color: white;
     font-size: 14px;
     font-weight: 700;
+    font-family: 'Roboto Mono', monospace;
 }
 
-.Portfolio .ItemsGrid .PortfolioItem a {
+.Portfolio .ItemsGrid .PortfolioItem .BottomRow a {
     color: #e53170;
     text-decoration: none;
     transition: font-weight ease 0.3s;
