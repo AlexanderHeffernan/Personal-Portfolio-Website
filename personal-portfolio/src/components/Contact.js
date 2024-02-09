@@ -9,7 +9,7 @@ function Contact() {
             <div className="ContactContent">
                 <h4>Get in touch</h4>
                 <p>I am always open to any new opportunities! So if you have a collaboration in mind or a job inquiry, don't hesitate to reach out.</p>
-                <a href="mailto:heffernan.alexander@icloud.com">Email me</a>
+                <a href="mailto:heffernan.alexander@icloud.com"><span><span>Email me</span></span></a>
             </div>
         </div>
     );

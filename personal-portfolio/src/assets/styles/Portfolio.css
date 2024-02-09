@@ -1,6 +1,5 @@
 .Portfolio {
-    padding: 0 100px 0 100px;
-    height: 100px;
+    padding: 100px 200px 100px 200px;
 }
 
 .Portfolio h3 {
@@ -18,7 +17,7 @@
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns as needed */
-    gap: 20px; /* Adjust the gap between items as needed */
+    gap: 30px; /* Adjust the gap between items as needed */
     justify-content: center; /* Center the grid horizontally */
     align-content: center; /* Center the grid vertically */
 }
@@ -36,13 +35,30 @@
 .Portfolio .ItemsGrid .PortfolioItem:hover {
     transform: scale(1.1);
     z-index: 1;
-    box-shadow: 0px 0px 10px 10px #ff8b0680;
 }
 
-.Portfolio .ItemsGrid .PortfolioItem h4 {
+.Portfolio .ItemsGrid .PortfolioItem .TopRow {
+    display: flex;
+    position: relative;
+}
+
+.Portfolio .ItemsGrid .PortfolioItem .TopRow h4 {
     font-size: 22px;
     color: #0f0e17;
     margin-top: 0;
+}
+
+.Portfolio .ItemsGrid .PortfolioItem .TopRow i {
+    color: #e53170;
+    display: block;
+    font-size: 25px;
+    position: absolute;
+    right: 0;
+    transition: font-size 0.3s ease;
+}
+
+.Portfolio .ItemsGrid .PortfolioItem .TopRow i:hover {
+    font-size: 30px;
 }
 
 .Portfolio .ItemsGrid .PortfolioItem .Tag {

@@ -1,11 +1,12 @@
 .Contact {
     height: auto;
     background-color: #fffffe;
+    padding: 20px 0 0 0;
 }
 
 .Contact h3 {
     font-size: 26px;
-    padding: 30px 100px 0 100px;
+    padding: 30px 200px 0 200px;
     color: #0f0e17;
     font-family: 'Roboto', sans-serif;
 }
@@ -34,14 +35,30 @@
 }
 
 .Contact .ContactContent a {
-    background-color: #ff8906;
-    color: white;
-    min-width: fit-content;
-    margin-right: 0.6rem;
-    padding: 15px 20px;
-    border-radius: 3px;
-    color: white;
-    font-size: 14px;
-    font-weight: 700;
+    font-family: 'Roboto Mono', monospace;
     text-decoration: none;
+}
+
+.Contact .ContactContent a span {
+    background-color: #0f0e17;
+    border-radius: 5px;
+    padding: 10px 0;
+}
+
+.Contact .ContactContent a span span{
+    background-color: #ff8906;
+    border: 1px solid #0f0e17;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    transition: all 0.3s ease;
+}
+
+.Contact .ContactContent a span:hover span{
+    position: relative;
+    top: -4px;
+    left: -4px;
 }

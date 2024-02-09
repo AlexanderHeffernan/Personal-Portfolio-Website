@@ -1,11 +1,12 @@
 .Education {
     height: auto;
     background-color: #fffffe;
+    padding: 30px 0 120px 0;
 }
 
 .Education h3 {
     font-size: 26px;
-    padding: 30px 100px 0 100px;
+    padding: 30px 200px 20px 200px;
     color: #0f0e17;
     font-family: 'Roboto', sans-serif;
 }
@@ -51,7 +52,7 @@
     position: absolute;
     width: 30px;
     height: 30px;
-    background-color: #0f0e17;
+    background-color: #ff8906;
     border-radius: 100%;
 }
 
@@ -98,7 +99,7 @@
 
 .Education .BoxHolder .Box p {
     font-size: 13px;
-    color: #a7a9be;
+    color: #e53170;
     font-family: 'Roboto Mono', monospace;
 }
 
