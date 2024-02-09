@@ -77,4 +77,13 @@
         width: 100%;
         margin-bottom: 40px;
     }
+
+    .About .ImageContainer .Outline:hover .Overlay{
+        opacity: 1;
+    }
+    
+    .About .ImageContainer .Outline:hover img{
+        top: -18px;
+        left: -18px;
+    }
 }

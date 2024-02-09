@@ -5,7 +5,7 @@
     position: fixed;
     text-align: center;
     top: 0;
-    transition: height 1s ease-in-out, background-color 1s ease-in-out;
+    transition: height 0.5s ease-in-out, background-color 1s ease-in-out;
     background-color: #0f0e17ba;
     backdrop-filter: blur(10px);
     z-index: 2;
@@ -93,6 +93,9 @@
 @media screen and (max-width: 750px) {
     .icon {
         display: block;
+        padding: 23px 46px 0 0;
+        font-size: 30px;
+        color:#ff8906;
     }
 
     .links{
@@ -106,10 +109,6 @@
 
     .links #text{
         margin: 10px; /* Add some margin between links */
-    }
-
-    .icon {
-        padding: 23px 46px 0 0;
     }
 
     .navbar.navbar.open {

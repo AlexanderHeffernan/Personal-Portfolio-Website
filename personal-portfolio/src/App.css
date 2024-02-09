@@ -58,3 +58,9 @@
     }
 }
   
+
+@media screen and (max-width: 750px) {
+    .cursor, .cursor-trail {
+        display: none;
+    }
+}

@@ -138,4 +138,13 @@
     .Education .BoxHolder .Box ul {
         padding-left: 15px;
     }
+
+    .Education .BoxHolder .Box ul li {
+        font-size: 14px;
+        color: #a7a9be;
+    }
+    
+    .Education .BoxHolder .Box ul li ul li {
+        font-size: 13px;
+    }
 }
