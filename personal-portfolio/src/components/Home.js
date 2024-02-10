@@ -7,7 +7,7 @@ function Home() {
         <div className="Home" id="Home">
             <h1>ALEXANDER <br />HEFFERNAN</h1>
             <h2>SOFTWARE ENGINEER, FRONT/BACK END WEB & APP DEVELOPER</h2>
-            <img className="scrollDownArrow" src={ScrollIcon} alt="scroll icon" /> 
+            <a className="scrollDownArrow" href="#About"><img src={ScrollIcon} alt="scroll icon" /></a>
         </div>
     )
 }
