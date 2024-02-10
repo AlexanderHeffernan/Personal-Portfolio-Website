@@ -125,7 +125,7 @@ function Portfolio() {
                 />
                 <PortfolioItem 
                     title={"Lone Wolf: World War 2"} 
-                    description={"A game designed for NCEA Level 2 & 3, later released on Steam. Fly over Europe and Northern Africa, engage in aerial combat, shoot down planes, drop bombs, and evade enemy attacks."}
+                    description={"A game developed by my brother and I for NCEA Level 2 & 3, later released on Steam. Fly over Europe and Northern Africa, engage in aerial combat, shoot down planes, drop bombs, and evade enemy attacks."}
                     tags={['Unity', 'C#']}
                     link={"https://store.steampowered.com/app/1399180/Lone_Wolf_World_War_2/"}
                     linkTitle={"Steam"}
@@ -169,7 +169,7 @@ function Portfolio() {
                 />
                 <PortfolioItem 
                     title={"Death Wave"} 
-                    description={"A project I worked on back in 2019. Death Wave is a endless zombie survival game where you have to last as long as you can against a never ending force of the undead on a planet plagued with fire and death."}
+                    description={"A project developed by my brother and I in 2019. Death Wave is a endless zombie survival game where you have to last as long as you can against a never ending force of the undead on a planet plagued with fire and death."}
                     tags={['Unity', 'C#']}
                     slideshow={() => handleOpenFullScreen([
                         DeathWave1,
