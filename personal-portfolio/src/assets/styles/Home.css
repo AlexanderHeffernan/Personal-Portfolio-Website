@@ -38,11 +38,6 @@
     cursor: none;
 }
 
-.scrollDownArrow img {
-    width: auto;
-    height: 100%;
-}
-
 @media screen and (max-width: 750px) {
     .Home h1 {
         font-size: 50px;

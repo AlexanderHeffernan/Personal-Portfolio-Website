@@ -46,14 +46,23 @@ function Home() {
             });
         };
 
+        const handleResize = () => {
+            const htmlTag = document.getElementById("html");
+            console.log(window.innerWidth);
+            if (window.innerWidth < 750) { htmlTag.style.scrollBehavior = 'auto'; }
+            else { htmlTag.style.scrollBehavior = 'smooth'; }
+        };
+
         document.addEventListener("mousemove", handleMouseMove);
         document.addEventListener('mouseleave', handleMouseLeave);
         document.addEventListener('scroll', handleScroll);
+        window.addEventListener('resize', handleResize);
 
         return () => {
             document.removeEventListener("mousemove", handleMouseMove);
             document.addEventListener('mouseleave', handleMouseLeave);
             document.addEventListener('scroll', handleScroll);
+            window.removeEventListener('resize', handleResize);
         };
     }, []);
 
@@ -85,21 +94,40 @@ function Home() {
             animationFrameId = requestAnimationFrame(animateCircles);
         };
       
-        const circles = document.querySelectorAll('.circle');
-        animateCircles();
-      
-        // Cleanup function
-        return () => {
-          // Cancel animation frame on component unmount
-          cancelAnimationFrame(animationFrameId);
-        };
-      }, []); // Only run this effect once on mount
+    const circles = document.querySelectorAll('.circle');
+    animateCircles();
     
+    // Cleanup function
+    return () => {
+        // Cancel animation frame on component unmount
+        cancelAnimationFrame(animationFrameId);
+    };
+    }, []); // Only run this effect once on mount
+    
+    const handleIconPress = (location) => {
+        const htmlTag = document.getElementById("html");
+        var toReset = false;
+        if (htmlTag) { 
+            htmlTag.style.scrollBehavior = 'smooth'; 
+            if (window.innerWidth < 750) { 
+                toReset = true;
+            }
+        }
+        window.location.href = location;
+        
+        if (toReset) { 
+            setTimeout(() => {
+                htmlTag.style.scrollBehavior = 'auto';
+            }, 800);
+        }
+              
+    }; 
+
     return (
         <div className="Home" id="Home">
             <h1>ALEXANDER <br />HEFFERNAN</h1>
             <h2>SOFTWARE ENGINEER, FRONT/BACK END WEB & APP DEVELOPER</h2>
-            <a className="scrollDownArrow" href="#About"><img src={ScrollIcon} alt="scroll icon" /></a>
+            <img onClick={() => handleIconPress("#About")} className="scrollDownArrow" src={ScrollIcon} alt="scroll icon" />
             {Array.from({ length: 12 }, (_, index) => (
                 <div className="circle" key={(index)}></div>
             ))}

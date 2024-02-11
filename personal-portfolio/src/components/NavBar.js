@@ -8,9 +8,28 @@ function NavBar() {
         setMenuOpen(!isMenuOpen);
     };
 
+    const handleNamePress = (location) => {
+        const htmlTag = document.getElementById("html");
+        var toReset = false;
+        if (htmlTag) { 
+            htmlTag.style.scrollBehavior = 'smooth'; 
+            if (window.innerWidth < 750) { 
+                toReset = true;
+            }
+        }
+        window.location.href = location;
+        
+        if (toReset) { 
+            setTimeout(() => {
+                htmlTag.style.scrollBehavior = 'auto';
+            }, 800);
+        }
+              
+    }; 
+
     return (
         <div className={`navbar ${isMenuOpen ? 'open' : ''}`} id="navbar">
-            <a className="title" href="#Home">Alexander <br />Heffernan</a>
+            <p className="title" onClick={() => handleNamePress("#Home")}>Alexander <br />Heffernan</p>
             <div className="links">
                 <a onClick={handleHamburgerClick} id="text" href="#About" className="active"><span className="num">01.</span> About</a>
                 <a onClick={handleHamburgerClick} id="text" href="#Work"><span className="num">02.</span> Work</a>
