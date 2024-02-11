@@ -5,10 +5,10 @@ import ScrollIcon from '../assets/images/scroll-down-arrow.gif';
 function Home() {
     const [coords, setCoords] = useState({ x: 0, y: 0});
     const coordsRef = useRef(coords);
-    const [showCursor, setCursor] = useState(true);
 
     const colors = ["#e53170", "#ec3569", "#f23b62", "#f7425b", "#fb4a53", "#fe524b", "#ff5a43", "#ff633b", "#ff6d31", "#ff7627", "#ff801a", "#ff8906"];
 
+    /* eslint-disable react-hooks/exhaustive-deps */
     useEffect(() => {
         const circles = document.querySelectorAll('.circle');
 
@@ -68,23 +68,20 @@ function Home() {
             let x = coordsRef.current.x;
             let y = coordsRef.current.y;
             
-            if (showCursor) {
-                circles.forEach((circle, index) => {
-                    circle.style.left = x - 12 + "px";
-                    circle.style.top = y - 12 + "px";
-            
-                    circle.style.transform = `scale(${((circles.length - index) / circles.length)})`;
-            
-                    circle.x = x;
-                    circle.y = y;
-            
-                    const nextCircle = circles[index + 1] || circles[0];
-                    x += (nextCircle.x - x) * 0.3;
-                    y += (nextCircle.y - y) * 0.3;
-                });
-            }
+            circles.forEach((circle, index) => {
+                circle.style.left = x - 12 + "px";
+                circle.style.top = y - 12 + "px";
         
-            // Request the next animation frame and store the ID
+                circle.style.transform = `scale(${((circles.length - index) / circles.length)})`;
+        
+                circle.x = x;
+                circle.y = y;
+        
+                const nextCircle = circles[index + 1] || circles[0];
+                x += (nextCircle.x - x) * 0.3;
+                y += (nextCircle.y - y) * 0.3;
+            });
+
             animationFrameId = requestAnimationFrame(animateCircles);
         };
       
