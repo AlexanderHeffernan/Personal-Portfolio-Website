@@ -20,7 +20,7 @@ function Home() {
         })
 
         const handleMouseMove = (e) => {
-            const maxY = window.innerHeight - 6;
+            const maxY = window.innerHeight - 5;
 
             if (e.pageY < maxY) {
                 circles.forEach((circle) => {
@@ -28,6 +28,10 @@ function Home() {
                 });
 
                 setCoords({ x: e.clientX, y: e.clientY });
+            } else {
+                circles.forEach((circle) => {
+                    circle.classList.add("hide");
+                })
             }
         };
 
