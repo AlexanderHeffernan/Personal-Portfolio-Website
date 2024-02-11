@@ -35,6 +35,7 @@
     margin-right: auto;
     height: 15%;
     width: auto;
+    cursor: none;
 }
 
 .scrollDownArrow img {
@@ -62,6 +63,7 @@
     left: 0;
     opacity: 1;
     transition: opacity 0.3s ease, width 0.3s ease, height 0.3s ease;
+    pointer-events: none;
 }
 
 .circle.hide {
