@@ -8,7 +8,7 @@
     transition: height 0.5s ease-in-out, background-color 1s ease-in-out;
     background-color: #0f0e17ba;
     backdrop-filter: blur(10px);
-    z-index: 2;
+    z-index: 3;
 }
 
 .title {
