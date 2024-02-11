@@ -6,8 +6,6 @@ import Work from './components/Work.js';
 import Education from './components/Education.js';
 import Portfolio from './components/Portfolio.js';
 import Contact from './components/Contact.js';
-import Cursor from './components/Cursor.js';
-import CursorTrail from './components/CursorTrail.js';
 
 function App() {
   return (

@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import '../assets/styles/Home.css';
 import ScrollIcon from '../assets/images/scroll-down-arrow.gif';
-import Cursor from '../components/Cursor.js';
 
 function Home() {
     const [coords, setCoords] = useState({ x: 0, y: 0});
