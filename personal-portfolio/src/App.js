@@ -19,8 +19,6 @@ function App() {
       <Education />
       <Portfolio />
       <Contact />
-      <Cursor />
-      <CursorTrail />
     </div>
   );
 }
