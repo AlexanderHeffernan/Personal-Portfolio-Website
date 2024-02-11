@@ -152,8 +152,8 @@ function Home() {
                 <div className="circle" key={(index)}></div>
             ))}
             <div className="ParallaxBackground">
-                <img src={Vector2} id="layer2" />
-                <img src={Vector1} id="layer1" />
+                <img src={Vector2} alt="" id="layer2" />
+                <img src={Vector1} alt="" id="layer1" />
             </div>
         </div>
     )
