@@ -1,12 +1,18 @@
 .Home {
     width: 100%;
     height: 100vh;
+    display: block;
+    cursor: none;
+}
+
+.HomeContent {
+    width: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    cursor: none;
 }
 
 .Home h1 {
@@ -26,6 +32,7 @@
     font-family: 'Roboto', sans-serif;
     font-size: 24px;
     letter-spacing: 3px;
+    text-shadow: 1px 1px 1px black;
 }
 
 .scrollDownArrow {
@@ -62,16 +69,17 @@
 
 .ParallaxBackground {
     z-index: 0;
-    position: absolute;
+    position: relative;
     left: 0;
-    bottom: 0;
+    bottom: 380px;
     width: 100%;
-    height: 280px;
+    height: 380px;
+    overflow-x: hidden;
 }
 
 .ParallaxBackground img {
     width: 180%;
-    height: 100%;
+    height: 270px;
     position: absolute;
     left: 0;
     bottom: 0;

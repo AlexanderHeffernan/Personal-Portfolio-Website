@@ -49,15 +49,17 @@ function Home() {
             });
 
             let value = window.scrollY;
-            const layer1 = document.getElementById("layer1");
-            layer1.style.left = -value * 0.9 + "px";
+            if (value > 0) {
+                const layer1 = document.getElementById("layer1");
+                layer1.style.left = -value * 0.9 + "px";
 
-            const layer2 = document.getElementById("layer2");
-            layer2.style.left = -value * 0.8 + "px";
-            layer2.style.height = 100 + value * 0.07 + "%";
+                const layer2 = document.getElementById("layer2");
+                layer2.style.left = -value * 0.8 + "px";
+                layer2.style.height = 270 + value * 0.07 + "px";
 
-            const background = document.getElementById("Home");
-            background.style.backgroundPosition = `50% calc(50% + ${value * 0.2}px)`;
+                const background = document.getElementById("Home");
+                background.style.backgroundPosition = `50% calc(50% + ${value * 0.2}px)`;
+            }
         };
 
         const handleResize = () => {
@@ -145,12 +147,14 @@ function Home() {
                 backgroundPosition: 'center',
                 backgroundRepeat: 'no-repeat'
             }}>
-            <h1>ALEXANDER <br />HEFFERNAN</h1>
-            <h2>SOFTWARE ENGINEER, FRONT/BACK END WEB & APP DEVELOPER</h2>
-            <img onClick={() => handleIconPress("#About")} className="scrollDownArrow" src={ScrollIcon} alt="scroll icon" />
-            {Array.from({ length: 12 }, (_, index) => (
-                <div className="circle" key={(index)}></div>
-            ))}
+            <div className="HomeContent">
+                <h1>ALEXANDER <br />HEFFERNAN</h1>
+                <h2>SOFTWARE ENGINEER, FRONT/BACK END WEB & APP DEVELOPER</h2>
+                <img onClick={() => handleIconPress("#About")} className="scrollDownArrow" src={ScrollIcon} alt="scroll icon" />
+                {Array.from({ length: 12 }, (_, index) => (
+                    <div className="circle" key={(index)}></div>
+                ))}
+            </div>
             <div className="ParallaxBackground">
                 <img src={Vector2} alt="" id="layer2" />
                 <img src={Vector1} alt="" id="layer1" />
