@@ -5,7 +5,7 @@ function Work() {
 
     const [accordionSelection, setAccordionSelection] = useState(0);
 
-    const content = [<XRB />, <McDonalds />]
+    const content = [<HomeStagedIT />, <XRB />, <McDonalds />]
 
     const handleAccordionSelectorClick = (id) => (
         setAccordionSelection(id)
@@ -16,11 +16,55 @@ function Work() {
             <h3><span>02.</span> Work</h3>
             <div className="AccordionHolder">
                 <div className="AccordionSelector">
-                    <button className={`${accordionSelection === 0 ? 'active' : ''}`} onClick={(e) => handleAccordionSelectorClick(0)}>XRB</button>
-                    <button className={`${accordionSelection === 1 ? 'active' : ''}`}onClick={(e) => handleAccordionSelectorClick(1)}>McDonald's</button>
+                <button className={`${accordionSelection === 0 ? 'active' : ''}`} onClick={(e) => handleAccordionSelectorClick(0)}>HomeStagedIT</button>
+                    <button className={`${accordionSelection === 1 ? 'active' : ''}`} onClick={(e) => handleAccordionSelectorClick(1)}>XRB</button>
+                    <button className={`${accordionSelection === 2 ? 'active' : ''}`}onClick={(e) => handleAccordionSelectorClick(2)}>McDonald's</button>
                 </div>
                 {content[accordionSelection]}
             </div>
+        </div>
+    )
+}
+
+function HomeStagedIT() {
+    return (
+        <div className="AccordionContent">
+            <h4>Website Designer @ HomeStagedIT</h4>
+            <p>Feb 2024 - Present</p>
+            <ul>
+                <li>
+                Leading the comprehensive redesign of an upcoming IT solution, taking
+                charge of creating style guidelines, design mock-ups in Adobe XD, and
+                implementing new designs into the extensive codebase.
+                </li>
+                <li>
+                Demonstrating a strong focus on user interface (UI) and user
+                experience (UX) design principles, striving to enhance usability and
+                satisfaction for end-users.
+                </li>
+            </ul>
+            <h5>Key responsibilities</h5>
+            <ul>
+                <li>
+                In the process of successfully transforming the user interface and
+                experience by leveraging HTML, CSS, JavaScript, and C# code,
+                ensuring seamless integration of design elements with existing
+                functionalities.
+                </li>
+                <li>
+                Collaborating closely with colleagues to adapt designs to meet their
+                needs and preferences, fostering a collaborative environment and
+                ensuring alignment with project objectives.
+                </li>
+            </ul>
+            <h5>Key achievements</h5>
+            <ul>
+                <li>
+                Leveraged Adobe XD and other design tools to create visually
+                compelling and intuitive interfaces, enriching the overall aesthetic and
+                functionality of the IT solution.
+                </li>
+            </ul>
         </div>
     )
 }
@@ -29,7 +73,7 @@ function XRB() {
     return (
         <div className="AccordionContent">
             <h4>Website Administrator @ External Reporting Board</h4>
-            <p>Mar 2022 - Present</p>
+            <p>Mar 2022 - Mar 2024</p>
             <p>Office Administrator Dec 2020 - Mar 2022</p>
             <ul>
                 <li>
