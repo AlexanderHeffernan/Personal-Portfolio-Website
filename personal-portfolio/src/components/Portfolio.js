@@ -3,6 +3,37 @@ import '../assets/styles/Portfolio.css';
 import PortfolioItem from './PortfolioItem';
 import SlideShow from './SlideShow';
 
+import CodeCompass1 from '../assets/images/CodeCompass1.png';
+import CodeCompass2 from '../assets/images/CodeCompass2.png';
+import CodeCompass3 from '../assets/images/CodeCompass3.png';
+import CodeCompass4 from '../assets/images/CodeCompass4.png';
+import CodeCompass5 from '../assets/images/CodeCompass5.png';
+import CodeCompass6 from '../assets/images/CodeCompass6.png';
+import CodeCompass7 from '../assets/images/CodeCompass7.png';
+import CodeCompass8 from '../assets/images/CodeCompass8.png';
+import CodeCompass9 from '../assets/images/CodeCompass9.png';
+import CodeCompass10 from '../assets/images/CodeCompass10.png';
+import CodeCompass11 from '../assets/images/CodeCompass11.png';
+import CodeCompass12 from '../assets/images/CodeCompass12.png';
+
+import HomeStagedIT1 from '../assets/images/HomeStagedIT1.png';
+import HomeStagedIT2 from '../assets/images/HomeStagedIT2.png';
+import HomeStagedIT3 from '../assets/images/HomeStagedIT3.png';
+import HomeStagedIT4 from '../assets/images/HomeStagedIT4.png';
+import HomeStagedIT5 from '../assets/images/HomeStagedIT5.png';
+import HomeStagedIT6 from '../assets/images/HomeStagedIT6.png';
+import HomeStagedIT7 from '../assets/images/HomeStagedIT7.png';
+import HomeStagedIT8 from '../assets/images/HomeStagedIT8.png';
+import HomeStagedIT9 from '../assets/images/HomeStagedIT9.png';
+import HomeStagedIT10 from '../assets/images/HomeStagedIT10.png';
+import HomeStagedIT11 from '../assets/images/HomeStagedIT11.png';
+
+import FairSplit1 from '../assets/images/FairSplit1.png';
+import FairSplit2 from '../assets/images/FairSplit2.png';
+import FairSplit3 from '../assets/images/FairSplit3.png';
+import FairSplit4 from '../assets/images/FairSplit4.png';
+import FairSplit5 from '../assets/images/FairSplit5.png';
+
 import PureWater1 from '../assets/images/PureWaterNZ-HomeScreen.png';
 import PureWater2 from '../assets/images/PureWaterNZ-Article.png';
 import PureWater3 from '../assets/images/PureWaterNZ-Login.png';
@@ -88,6 +119,59 @@ function Portfolio() {
         <div className="Portfolio" id="Portfolio">
             <h3><span>04.</span> Portfolio</h3>
             <div className="ItemsGrid">
+                <PortfolioItem
+                    title={"Code Compass"}
+                    description={"A webapp that generates coding roadmaps. Users can track their progress, watch recommended YouTube videos, and test their knowledge with quizzes."}
+                    tags={['Vue', 'JavaScript', 'Firebase', 'OpenAI']}
+                    link={"https://www.codecompass.co.nz"}
+                    linkTitle={"Check it out"}
+                    slideshow={() => handleOpenFullScreen([
+                        CodeCompass1,
+                        CodeCompass2,
+                        CodeCompass3,
+                        CodeCompass4,
+                        CodeCompass5,
+                        CodeCompass6,
+                        CodeCompass7,
+                        CodeCompass8,
+                        CodeCompass9,
+                        CodeCompass10,
+                        CodeCompass11,
+                        CodeCompass12
+                    ])}
+                />
+                <PortfolioItem
+                    title="FairSplit"
+                    description={"A webapp that helps couples split their expenses fairly. Users can add expenses, track their balances, and settle up with their partner."}
+                    tags={["Vue", "JavaScript", "Firebase"]}
+                    link={"https://github.com/AlexanderHeffernan/CoupleExpenseBalancer"}
+                    linkTitle={"GitHub"}
+                    slideshow={() => handleOpenFullScreen([
+                        FairSplit1,
+                        FairSplit2,
+                        FairSplit3,
+                        FairSplit4,
+                        FairSplit5
+                    ])}
+                />
+                <PortfolioItem
+                    title="HomeStagedIT"
+                    description={"From Mar 2024 to Jul 2024, I worked on the first phase of a design overhall for HomeStagedIT, a webapp that helps home stagers manage their business. Phase 2 coming soon."}
+                    tags={["HTML", "CSS", "JavaScript", "C#", "Azure"]}
+                    slideshow={() => handleOpenFullScreen([
+                        HomeStagedIT1,
+                        HomeStagedIT2,
+                        HomeStagedIT3,
+                        HomeStagedIT4,
+                        HomeStagedIT5,
+                        HomeStagedIT6,
+                        HomeStagedIT7,
+                        HomeStagedIT8,
+                        HomeStagedIT9,
+                        HomeStagedIT10,
+                        HomeStagedIT11
+                    ])}
+                />
                 <PortfolioItem 
                     title={"XRB Website"} 
                     description={"In January 2022, I played a role in developing the new XRB website, contributing to the design, structure, and content. I have been overseeing website management ever since."}
