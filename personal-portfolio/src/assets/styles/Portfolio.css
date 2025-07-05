@@ -52,6 +52,12 @@
     width: calc(100% - 30px);
 }
 
+.Portfolio .ItemsGrid .PortfolioItem .TopRow p {
+    position: absolute;
+    top: -15px;
+    right: -10px;
+}
+
 .Portfolio .ItemsGrid .PortfolioItem .TopRow i {
     color: #e53170;
     display: block;
@@ -59,6 +65,7 @@
     position: absolute;
     right: 0;
     transition: font-size 0.3s ease;
+    cursor: pointer;
 }
 
 .Portfolio .ItemsGrid .PortfolioItem .TopRow i:hover {

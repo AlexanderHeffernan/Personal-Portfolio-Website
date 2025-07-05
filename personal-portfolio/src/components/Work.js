@@ -29,11 +29,11 @@ function Work() {
 function HomeStagedIT() {
     return (
         <div className="AccordionContent">
-            <h4>Website Designer @ HomeStagedIT</h4>
-            <p>Feb 2024 - Present</p>
+            <h4>Website Developer/Designer @ HomeStagedIT</h4>
+            <p>March 2024 - Present</p>
             <ul>
                 <li>
-                Leading the comprehensive redesign of an upcoming IT solution, taking
+                Leading the comprehensive redesign of an upcoming IT platform, taking
                 charge of creating style guidelines, design mock-ups in Adobe XD, and
                 implementing new designs into the extensive codebase.
                 </li>
@@ -46,9 +46,9 @@ function HomeStagedIT() {
             <h5>Key responsibilities</h5>
             <ul>
                 <li>
-                In the process of successfully transforming the user interface and
-                experience by leveraging HTML, CSS, JavaScript, and C# code,
-                ensuring seamless integration of design elements with existing
+                Enhancing user interface (UI) and user experience (UX) by leveraging
+                HTML, CSS, JavaScript, and C# within a .NET framework, ensuring
+                seamless alignment of design elements with existing backend
                 functionalities.
                 </li>
                 <li>
@@ -60,9 +60,9 @@ function HomeStagedIT() {
             <h5>Key achievements</h5>
             <ul>
                 <li>
-                Leveraged Adobe XD and other design tools to create visually
-                compelling and intuitive interfaces, enriching the overall aesthetic and
-                functionality of the IT solution.
+                Utilizing Adobe XD and other design tools to craft visually appealing
+                and functional interfaces, elevating the overall aesthetic and
+                functionality of the IT platform.
                 </li>
             </ul>
         </div>

@@ -8,9 +8,19 @@ function About() {
         <div className="About" id="About">
             <div className="TextContainer">
                 <h3><span>01.</span> About</h3>
-                <p>Hey there! I'm currently diving into the world of software engineering at Victoria University of Wellington, working towards a Bachelor's degree. With almost two years of hands-on experience as a website administrator in a communications team, I've become a tech enthusiast with a knack for web content management and collaboration.
-                    <br /><br />Whether it's through my academic journey or professional gigs, my focus is always on growth and innovation. I bring a mix of solid engineering principles and practical communication skills to the table. My aim? To inject fresh perspectives into every technical challenge and contribute tech-driven solutions.
-                    <br /><br />Excited about the tech journey ahead, and looking forward to connecting with like-minded folks. Let's create something awesome together!
+                <p>Kia ora! I’m a passionate software engineering student at Victoria University of Wellington,
+excited about building technology that makes a difference. I worked for over three
+years at the External Reporting Board as the Website Administrator, managing
+web content, collaborating with teams, and contributing to design projects. For
+over a year and a half, I’ve been the Website Developer/Designer at
+HomeStagedIT, leading front-end development for a new IT platform that’s nearly
+ready for beta testing.
+                    <br /><br />My studies, professional experience, and personal projects—showcased here and in my
+GitHub portfolio—reflect a deep commitment to growth, curiosity, and creative
+problem-solving. I thrive in collaborative environments, adapt quickly to new
+challenges, and consistently look for ways to add value. I'm eager to contribute to
+a forward-thinking team, where I can apply my skills, expand them further, and
+make a meaningful impact from day one.
                 </p>
             </div>
             <div className="ImageContainer">

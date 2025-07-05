@@ -36,7 +36,7 @@ function NavBar() {
                 <a onClick={handleHamburgerClick} id="text" href="#Education"><span className="num">03.</span> Education</a>
                 <a onClick={handleHamburgerClick} id="text" href="#Portfolio"><span className="num">04. </span>Portfolio</a>
                 <a onClick={handleHamburgerClick} id="text" href="#Contact"><span className="num">05. </span>Contact</a>
-                <a onClick={handleHamburgerClick} id="button" href="documents/Alexander Heffernan – CV (2024).pdf" download="Alexander Heffernan - CV (2024).pdf"><span><span>Resume</span></span></a>
+                <a onClick={handleHamburgerClick} id="button" href="documents/Alexander Heffernan Resume.pdf" download="Alexander Heffernan Resume.pdf"><span><span>Resume</span></span></a>
             </div>
             <p className="icon" onClick={handleHamburgerClick}>
                 <i className="fa fa-bars"></i>

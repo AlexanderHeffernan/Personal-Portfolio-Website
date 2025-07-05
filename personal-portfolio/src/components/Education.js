@@ -50,7 +50,7 @@ function Education() {
                             <div className="Line"></div>
                         </div>
                         <div className="Point" style={{ right: '40px'}}>
-                            <p>2024</p>
+                            <p>2025</p>
                             <div className="Line"></div>
                         </div>
                     </div>
@@ -59,8 +59,8 @@ function Education() {
                         <p>Undergraduate since 2023</p>
                         <ul>
                             <li>Majoring in Software Engineering</li>
-                            <li>Completed courses in Computer Science, Engineering, Mathematics, and Cyber Security</li>
-                            <li>A+ average</li>
+                            <li>Specialising in Artificial Intelligence</li>
+                            <li>A average</li>
                         </ul>
                     </div>
                 </div>

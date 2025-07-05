@@ -149,7 +149,7 @@ function Home() {
             }}>
             <div className="HomeContent">
                 <h1>ALEXANDER <br />HEFFERNAN</h1>
-                <h2>SOFTWARE ENGINEER, FRONT/BACK END WEB & APP DEVELOPER</h2>
+                <h2>SOFTWARE ENGINEER | FULL-STACK DEVELOPER</h2>
                 <img onClick={() => handleIconPress("#About")} className="scrollDownArrow" src={ScrollIcon} alt="scroll icon" />
                 {Array.from({ length: 12 }, (_, index) => (
                     <div className="circle" key={(index)}></div>

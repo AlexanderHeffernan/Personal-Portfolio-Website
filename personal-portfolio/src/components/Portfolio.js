@@ -3,6 +3,10 @@ import '../assets/styles/Portfolio.css';
 import PortfolioItem from './PortfolioItem';
 import SlideShow from './SlideShow';
 
+import ServerWatch1 from '../assets/images/ServerWatch1.png';
+import ServerWatch2 from '../assets/images/ServerWatch2.png';
+import ServerWatch3 from '../assets/images/ServerWatch3.png';
+
 import CodeCompass1 from '../assets/images/CodeCompass1.png';
 import CodeCompass2 from '../assets/images/CodeCompass2.png';
 import CodeCompass3 from '../assets/images/CodeCompass3.png';
@@ -24,15 +28,6 @@ import HomeStagedIT5 from '../assets/images/HomeStagedIT5.png';
 import HomeStagedIT6 from '../assets/images/HomeStagedIT6.png';
 import HomeStagedIT7 from '../assets/images/HomeStagedIT7.png';
 import HomeStagedIT8 from '../assets/images/HomeStagedIT8.png';
-import HomeStagedIT9 from '../assets/images/HomeStagedIT9.png';
-import HomeStagedIT10 from '../assets/images/HomeStagedIT10.png';
-import HomeStagedIT11 from '../assets/images/HomeStagedIT11.png';
-
-import FairSplit1 from '../assets/images/FairSplit1.png';
-import FairSplit2 from '../assets/images/FairSplit2.png';
-import FairSplit3 from '../assets/images/FairSplit3.png';
-import FairSplit4 from '../assets/images/FairSplit4.png';
-import FairSplit5 from '../assets/images/FairSplit5.png';
 
 import PureWater1 from '../assets/images/PureWaterNZ-HomeScreen.png';
 import PureWater2 from '../assets/images/PureWaterNZ-Article.png';
@@ -82,16 +77,6 @@ import XRBWebsite3 from '../assets/images/XRBWebsite3.png';
 import XRBWebsite4 from '../assets/images/XRBWebsite4.png';
 import XRBWebsite5 from '../assets/images/XRBWebsite5.png';
 
-import BusNetworks1 from '../assets/images/BusNetworks1.png';
-import BusNetworks2 from '../assets/images/BusNetworks2.png';
-import BusNetworks3 from '../assets/images/BusNetworks3.png';
-
-import WellingtonTrains1 from '../assets/images/WellingtonTrains1.png';
-import WellingtonTrains2 from '../assets/images/WellingtonTrains2.png';
-import WellingtonTrains3 from '../assets/images/WellingtonTrains3.png';
-import WellingtonTrains4 from '../assets/images/WellingtonTrains4.png';
-import WellingtonTrains5 from '../assets/images/WellingtonTrains5.png';
-
 import AVCProject1 from '../assets/images/AVCProject1.jpeg';
 import AVCProject2 from '../assets/images/AVCProject2.jpeg';
 import AVCProject3 from '../assets/images/AVCProject3.jpeg';
@@ -120,11 +105,59 @@ function Portfolio() {
             <h3><span>04.</span> Portfolio</h3>
             <div className="ItemsGrid">
                 <PortfolioItem
+                    title={"ServerWatch"}
+                    description={"A system monitoring tool that fetches server performance metrics (CPU, disk usage, etc.) using a lightweight Rust agent, with a static frontend hosted on GitHub Pages for easy visualization."}
+                    tags={["Rust", "Vue.js", "TypeScript", "Raspberry Pi"]}
+                    link={"https://github.com/AlexanderHeffernan/ServerWatch"}
+                    linkTitle={"GitHub"}
+                    slideshow={() => handleOpenFullScreen([
+                        ServerWatch1,
+                        ServerWatch2,
+                        ServerWatch3
+                    ])}
+                />
+                <PortfolioItem
+                    title={"Rusty API"}
+                    description={"A secure and lightweight Rust library for building backend APIs. It features HTTPS, password-protected routes, rate limiting, and more, making it ideal for rapid API development."}
+                    tags={["Rust", "API", "HTTPS", "Authentication"]}
+                    link={"https://crates.io/crates/rusty-api"}
+                    linkTitle={"Crates.io"}
+                />
+                <PortfolioItem
+                    title="HomeStagedIT"
+                    description={"From Mar 2024, I have worked on a design overhall for HomeStagedIT, a webapp that helps home stagers manage their business. Beta testing will begin in the coming months."}
+                    tags={["HTML", "CSS", "JavaScript", "C#", ".NET", "Azure"]}
+                    slideshow={() => handleOpenFullScreen([
+                        HomeStagedIT1,
+                        HomeStagedIT2,
+                        HomeStagedIT3,
+                        HomeStagedIT4,
+                        HomeStagedIT5,
+                        HomeStagedIT6,
+                        HomeStagedIT7,
+                        HomeStagedIT8
+                    ])}
+                />
+                <PortfolioItem 
+                    title={"XRB Website"} 
+                    description={"In January 2022, I played a role in developing the new XRB website, contributing to the design, structure, and content. While I was Website Administrator, I managed the website, ensuring it was up-to-date and functional."}
+                    tags={['SilverStripe', 'HTML', 'CSS']}
+                    link={"https://www.xrb.govt.nz"}
+                    linkTitle={"Check it out"}
+                    slideshow={() => handleOpenFullScreen([
+                        XRBWebsite1,
+                        XRBWebsite2,
+                        XRBWebsite3,
+                        XRBWebsite4,
+                        XRBWebsite5
+                    ])}
+                />
+                <PortfolioItem
                     title={"Code Compass"}
                     description={"A webapp that generates coding roadmaps. Users can track their progress, watch recommended YouTube videos, and test their knowledge with quizzes."}
-                    tags={['Vue', 'JavaScript', 'Firebase', 'OpenAI']}
-                    link={"https://www.codecompass.co.nz"}
-                    linkTitle={"Check it out"}
+                    tags={['Vue.js', 'JavaScript', 'Firebase', 'OpenAI']}
+                    link={"https://github.com/AlexanderHeffernan/Code-Compass"}
+                    linkTitle={"GitHub"}
                     slideshow={() => handleOpenFullScreen([
                         CodeCompass1,
                         CodeCompass2,
@@ -140,72 +173,37 @@ function Portfolio() {
                         CodeCompass12
                     ])}
                 />
-                <PortfolioItem
-                    title="FairSplit"
-                    description={"A webapp that helps couples split their expenses fairly. Users can add expenses, track their balances, and settle up with their partner."}
-                    tags={["Vue", "JavaScript", "Firebase"]}
-                    link={"https://github.com/AlexanderHeffernan/CoupleExpenseBalancer"}
+                <PortfolioItem 
+                    title={"AVC Project"} 
+                    description={"The Autonomous Vehicle Challenge was an Engineering project where we had to create and program an small robot to complete an obstacle course."}
+                    tags={['C++', 'Robotics', 'Raspberry Pi']}
+                    link={"https://github.com/AlexanderHeffernan/AVC-Robot-Navigation"}
                     linkTitle={"GitHub"}
                     slideshow={() => handleOpenFullScreen([
-                        FairSplit1,
-                        FairSplit2,
-                        FairSplit3,
-                        FairSplit4,
-                        FairSplit5
-                    ])}
-                />
-                <PortfolioItem
-                    title="HomeStagedIT"
-                    description={"From Mar 2024 to Jul 2024, I worked on the first phase of a design overhall for HomeStagedIT, a webapp that helps home stagers manage their business. Phase 2 coming soon."}
-                    tags={["HTML", "CSS", "JavaScript", "C#", "Azure"]}
-                    slideshow={() => handleOpenFullScreen([
-                        HomeStagedIT1,
-                        HomeStagedIT2,
-                        HomeStagedIT3,
-                        HomeStagedIT4,
-                        HomeStagedIT5,
-                        HomeStagedIT6,
-                        HomeStagedIT7,
-                        HomeStagedIT8,
-                        HomeStagedIT9,
-                        HomeStagedIT10,
-                        HomeStagedIT11
+                        AVCProject1,
+                        AVCProject2,
+                        AVCProject3,
+                        AVCProject4,
+                        AVCProject5,
+                        AVCProject6,
+                        AVCProject7,
                     ])}
                 />
                 <PortfolioItem 
-                    title={"XRB Website"} 
-                    description={"In January 2022, I played a role in developing the new XRB website, contributing to the design, structure, and content. I have been overseeing website management ever since."}
-                    tags={['SilverStripe', 'HTML', 'CSS']}
-                    link={"https://www.xrb.govt.nz"}
-                    linkTitle={"Check it out"}
+                    title={"Winged Warfare"} 
+                    description={"A project for a Computer Graphics course, embodying the core concepts learned during the trimester. Built with Processing, using Object-Oriented Programming principles."}
+                    tags={['Processing', 'OOP']}
                     slideshow={() => handleOpenFullScreen([
-                        XRBWebsite1,
-                        XRBWebsite2,
-                        XRBWebsite3,
-                        XRBWebsite4,
-                        XRBWebsite5
+                        WingedWarfare1,
+                        WingedWarfare2,
+                        WingedWarfare3,
+                        WingedWarfare4,
+                        WingedWarfare5,
+                        WingedWarfare6,
+                        WingedWarfare7
                     ])}
-                />
-                <PortfolioItem 
-                    title={"Pure Water NZ"} 
-                    description={"A website built for NCEA Level 1. Hosted many articles on New Zealand's Water infrastructure, and contained many technical challenges involving databases with PHP and SQL."}
-                    tags={['HTML', 'CSS', 'Bootstrap 3', 'PHP', 'SQL']}
-                    slideshow={() => handleOpenFullScreen([
-                        PureWater1,
-                        PureWater2,
-                        PureWater3
-                    ])}
-                />
-                <PortfolioItem 
-                    title={"RFM"} 
-                    description={"A website built for NCEA Level 3. Hosted a large database of songs, that with the help of algorithms written in JavaScript could easily be explored and ranked by popularity."}
-                    tags={['HTML', 'CSS', 'Bootstrap 3', 'JavaScript', 'PHP', 'SQL']}
-                    slideshow={() => handleOpenFullScreen([
-                        RFM1,
-                        RFM2,
-                        RFM3,
-                        RFM4
-                    ])}
+                    link={"https://github.com/AlexanderHeffernan/WingedWarfare-CGRA151"}
+                    linkTitle={"GitHub"}
                 />
                 <PortfolioItem 
                     title={"Lone Wolf: World War 2"} 
@@ -236,66 +234,41 @@ function Portfolio() {
                     ])}
                 />
                 <PortfolioItem 
-                    title={"Winged Warfare"} 
-                    description={"A project for a Computer Graphics course, embodying the core concepts learned during the trimester. Built with Processing, using Object-Oriented Programming principles."}
-                    tags={['Processing', 'OOP']}
-                    slideshow={() => handleOpenFullScreen([
-                        WingedWarfare1,
-                        WingedWarfare2,
-                        WingedWarfare3,
-                        WingedWarfare4,
-                        WingedWarfare5,
-                        WingedWarfare6,
-                        WingedWarfare7
-                    ])}
-                    link={"https://github.com/AlexanderHeffernan/WingedWarfare-CGRA151"}
+                    title={"RFM"} 
+                    description={"A website built for NCEA Level 2/3. Hosted a large database of songs, that with the help of algorithms written in JavaScript could easily be explored and ranked by popularity."}
+                    tags={['HTML', 'CSS', 'Bootstrap 3', 'JavaScript', 'PHP', 'SQL']}
+                    link={"https://github.com/AlexanderHeffernan/Royalty-Free-Music-Platform"}
                     linkTitle={"GitHub"}
+                    slideshow={() => handleOpenFullScreen([
+                        RFM1,
+                        RFM2,
+                        RFM3,
+                        RFM4
+                    ])}
+                />
+                <PortfolioItem 
+                    title={"Pure Water NZ"} 
+                    description={"A website built for NCEA Level 1. Hosted many articles on New Zealand's Water infrastructure, and contained many technical challenges involving databases with PHP and SQL."}
+                    tags={['HTML', 'CSS', 'Bootstrap 3', 'PHP', 'SQL']}
+                    link={"https://alexanderheffernan.github.io/PureWaterNZ/"}
+                    linkTitle={"Check it out"}
+                    slideshow={() => handleOpenFullScreen([
+                        PureWater1,
+                        PureWater2,
+                        PureWater3
+                    ])}
                 />
                 <PortfolioItem 
                     title={"Death Wave"} 
                     description={"A project developed by my brother and I in 2019. Death Wave is a endless zombie survival game where you have to last as long as you can against a never ending force of the undead on a planet plagued with fire and death."}
                     tags={['Unity', 'C#']}
+                    link={"https://the-programming-juvenile.itch.io/death-wave"}
+                    linkTitle={"Itch.io"}
                     slideshow={() => handleOpenFullScreen([
                         DeathWave1,
                         DeathWave2,
                         DeathWave3,
                         DeathWave4
-                    ])}
-                />
-                <PortfolioItem 
-                    title={"Bus Network System"} 
-                    description={"A Computer Science assignment that covers key concepts from the introductory 100-level data types course, using the New Zealand Bus Network as a basis."}
-                    tags={['Java', 'Advanced Data Types']}
-                    slideshow={() => handleOpenFullScreen([
-                        BusNetworks1,
-                        BusNetworks2,
-                        BusNetworks3
-                    ])}
-                />
-                <PortfolioItem 
-                    title={"WGTN Trains System"} 
-                    description={"A Computer Science assignment encapsulating fundamental concepts from the introductory 100-level course on data types, based on the Wellington Trains Network."}
-                    tags={['Java', 'Advanced Data Types']}
-                    slideshow={() => handleOpenFullScreen([
-                        WellingtonTrains1,
-                        WellingtonTrains2,
-                        WellingtonTrains3,
-                        WellingtonTrains4,
-                        WellingtonTrains5
-                    ])}
-                />
-                <PortfolioItem 
-                    title={"AVC Project"} 
-                    description={"The Autonomous Vehicle Challenge was an Engineering project where we had to create and program an small robot to complete an obstacle course."}
-                    tags={['C++', 'Robotics', 'Raspberry Pi']}
-                    slideshow={() => handleOpenFullScreen([
-                        AVCProject1,
-                        AVCProject2,
-                        AVCProject3,
-                        AVCProject4,
-                        AVCProject5,
-                        AVCProject6,
-                        AVCProject7,
                     ])}
                 />
             </div>
